@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, li, ol{list-style: none;}
+a{text-decoration: none; color: #666;}
+
+.container{width: 1200px; height: 100%; background-color: darkcyan; margin: 0 auto;}
+
+#top{width: 100%; height: 937px; margin:0 auto; position:relative;}
+header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
+nav{width: 100%; height:70px; background-color: chocolate;}
+#logo{float: left; margin-left: 3%;}
+ul{width: 70%; height: 70px; float: right; display: flex; justify-content: space-around; align-items: center; background-color: cornsilk;}
+li{font-size: 13px;}
+#main{width: 100%; height: 937px; background-color: burlywood; z-index: 1; position:absolute; top:0; left:0}
+
+#contents{width: 100%; height: 940px; background-color: darkgoldenrod;}
+.contents_left{width: 50%; height: 100%; float: left; background-image:url(../img/pic_work.jpg); background-position: center; background-size: cover;}
+
+.contents_right{width: 50%; height: 100%; float: right; background-color: darkolivegreen;}
+.contents_work{width: 100%; height: 90%; margin: 8% 0 0 0; background-color: dimgray; display: flex; flex-direction: column;}
+.workbox{width: 100%; height: 20%; background-color: white; }
+.workbox:hover{background-color: aliceblue;}
+
+.work_icon{width: 25%; height: 100%; float: left; background-color: aquamarine;}
+.work_text{width: 75%; height: 100%; float: right; display: flex; align-content: center; flex-direction: column; padding: 3%;}
+.work_text>h3{font-size: 15px; margin-bottom: 11px;}
+.work_text p{font-size: 13px; line-height: 20px;}
+
+#middle{width: 100%; height: 500px; background-color: burlywood;}
+.middle_right{width: 50%; height: 100%; float: right; background-color:darkgreen;}
+.middle_left{width: 50%; height: 100%; float: left; padding: 3%; background-color: cornflowerblue;}
+.middle_textbox{text-align: right;}
+.middle_textbox>h1{font-size: 30px; margin-bottom: 20px;}
+.middle_textbox p{font-size: 15px; line-height: 25px;}
