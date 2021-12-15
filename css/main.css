@@ -19,20 +19,68 @@ li{font-size: 13px;}
 
 .contents_right{width: 50%; height: 100%; float: right; background-color: darkolivegreen;}
 .contents_work{width: 100%; height: 90%; margin: 8% 0 0 0; background-color: dimgray; display: flex; flex-direction: column;}
-.workbox{width: 100%; height: 20%; background-color: white; }
-.workbox:hover{background-color: aliceblue;}
+.workbox1{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.workbox2{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1.2s; opacity: 0;}
+.workbox3{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1.4s; opacity: 0;}
+.workbox4{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1.6s; opacity: 0;}
+.workbox5{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1.8s; opacity: 0;}
+.workbox6{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 2s; opacity: 0;}
+.workbox1:hover{background-color: aliceblue;}
+.workbox2:hover{background-color: aliceblue;}
+.workbox3:hover{background-color: aliceblue;}
+.workbox4:hover{background-color: aliceblue;}
+.workbox5:hover{background-color: aliceblue;}
+.workbox6:hover{background-color: aliceblue;}
+
 
 .work_icon{width: 25%; height: 100%; float: left; background-color: aquamarine;}
 .work_text{width: 75%; height: 100%; float: right; display: flex; align-content: center; flex-direction: column; padding: 3%;}
 .work_text>h3{font-size: 15px; margin-bottom: 11px;}
 .work_text p{font-size: 13px; line-height: 20px;}
 
+
 #middle{width: 100%; height: 500px; background-color: burlywood;}
 .middle_right{width: 50%; height: 100%; float: right; background-color:darkgreen;}
 .middle_left{width: 50%; height: 100%; float: left; padding: 3%; background-color: cornflowerblue;}
 .middle_textbox{text-align: right;}
-.middle_textbox>h1{font-size: 30px; margin-bottom: 30px;}
-.middle_textbox p{font-size: 15px; line-height: 25px;}
+.middle_textbox>h1{font-size: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 2s; opacity: 0;}
+.middle_textbox p{font-size: 15px; line-height: 25px; transform: translateY(100px); transition: all 2s; opacity: 0;}
 
-#counts{width: 100%; height: 25%; display: flex; justify-content: space-around; background-color: darkorange; margin-top: 50px;}
-.countBox{width: 23%; height: 100%; background-color:firebrick;}
+
+#counts{width: 100%; height: 25%; display: flex; justify-content: space-around; background-color: darkorange; margin-top: 50px; transform: translateY(100px); transition: all 2s; opacity: 0;}
+.countBox1{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
+.countBox2{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
+.countBox3{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
+.countBox4{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
+.number{margin-bottom: 3%;}
+.numberP{font-size: 14px;}
+
+
+
+#wwfStory{width: 100%; height: 800px; background-color: gray; padding: 50px;}
+.wwfStorybox{width: 100%; height: 100%; background-color: burlywood;}
+.wwfStorybox_index{width: 100%; height: 150px; display: flex; justify-content: center; align-items: center; background-color: cornflowerblue;}
+.wwfStorybox_text{width: 20%; height: auto; text-align: center; background-color:darkgoldenrod;}
+
+.wwfStorybox_left{width: 45%; height: 550px; float: left; background-color: darkkhaki;}
+.wwfStorybox_left>img{width: 100%; height: 100%; background-size: cover; background-position: center;}
+
+.wwfStorybox_right{width: 55%; height: 550px; float: right; padding: 3%; background-color: darkolivegreen;}
+
+.wwfStorybox_rightText{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; background-color:  darksalmon;}
+.wwfStorybox_rightText h4{line-height: 30px;}
+
+
+#detail{width: 100%; height: 50px; background-color: dodgerblue;}
+.more{width: 30%; height: 50px; border-radius: 3px; display: flex; justify-content:center; align-items:center; float:left; background-color:   darkorange;}
+
+.another{width: 30%; height: 50px; border-radius: 3px; display: flex; justify-content:center; align-items:center; float: right; margin-right: 35%; background-color:darkturquoise;}
+
+
+#movies{width: 100%; height: 300px; background-color: gold;}
+.movies_pic{display: flex; flex-direction: row;}
+.movies1_icon{width: 100%; height: 100%; background-color: white; float: left; position:absolute; top: 0; left: 0; opacity: 0;}
+.movies1_icon:hover {opacity:0.7; transition: all 0.3s ease;}
+
+
+#history{width: 100%; height: 700px; background-color: forestgreen;}
