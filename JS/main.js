@@ -30,51 +30,51 @@ $(window).scroll(function(){
 });
 
 
-$(function() {
-  let counter = 782000;
+$(function(){
+  let counter=782000;
   counterSpeed();
-  function counterSpeed() {
-    counterbox = setInterval(countMax, 1);
+  function counterSpeed(){
+    counterbox=setInterval(countMax, 1);
 
-    function countMax() {
+    function countMax(){
       counter++;
-      if (counter > 784016) {
+      if (counter>784016){
         clearInterval(counterbox);
-      } else {
+      } else{
         $(".countBox1 h3").text(counter);
       }
     }
   }
 });
 
-$(function() {
-  let counter = 128000;
+$(function(){
+  let counter=128000;
   counterSpeed();
-  function counterSpeed() {
-    counterbox = setInterval(counterMax, 1);
+  function counterSpeed(){
+    counterbox=setInterval(counterMax, 1);
     
-    function counterMax() {
+    function counterMax(){
       counter++;
-      if (counter > 130000) {
+      if(counter>130000){
         clearInterval(counterbox);
-      } else {
+      } else{
         $(".countBox2 h3").text(counter);
       }
     }
   }
 });
 
-$(function() {
+$(function(){
   let counter = 882000;
   counterSpeed();
-  function counterSpeed() {
-    counterbox = setInterval(countMax, 1);
+  function counterSpeed(){
+    counterbox=setInterval(countMax, 1);
 
-    function countMax() {
+    function countMax(){
       counter++;
-      if (counter > 884042) {
+      if(counter>884042){
         clearInterval(counterbox);
-      } else {
+      }else{
         $(".countBox3 h3").text(counter);
       }
     }
@@ -84,16 +84,55 @@ $(function() {
 $(function() {
   let counter = 0;
   counterSpeed();
-  function counterSpeed() {
+  function counterSpeed(){
     counterbox = setInterval(counterMax, 1);
     
-    function counterMax() {
+    function counterMax(){
       counter++;
-      if (counter > 1300) {
+      if(counter>1300){
         clearInterval(counterbox);
-      } else {
+      }else{
         $(".countBox4 h3").text(counter);
       }
     }
   }
+});
+
+$(document).ready(function(){
+  $('.movie').mouseleave(function(){
+    $(this).children('.icon_video').hide();
+  });
+  $('.movie').mouseover(function(){
+    $(this).children('.icon_video').show();
+  });
+});
+
+$(function(){
+  $('.icon_video').click(function(){
+    $('.popup1').css('display','block')();
+  });
+  $('#close').click(function(){
+    $('.popup1').css('display','none')();
+  });
+
+  $('.icon_video').click(function(){
+    $('.popup2').css('display','block')();
+  });
+  $('#close').click(function(){
+    $('.popup2').css('display','none')();
+  });
+
+  $('.icon_video').click(function(){
+    $('.popup3').css('display','block')();
+  });
+  $('#close').click(function(){
+    $('.popup3').css('display','none')();
+  });
+
+  $('.icon_video').click(function(){
+    $('.popup4').css('display','block')();
+  });
+  $('#close').click(function(){
+    $('.popup4').css('display','none')();
+  });
 });
