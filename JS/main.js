@@ -136,3 +136,16 @@ $(function(){
     $('.popup4').css('display','none')();
   });
 });
+
+function slide() {
+  let w=window.innerWidth; 
+  $('.slide').stop().animate({ marginLeft: -w}, function () {
+    $('.slide li:first').appendTo('.slide');
+    $('.slide').css({ marginLeft: 0 });
+  });
+}
+setInterval(slide, 3000);
+
+
+
+  
