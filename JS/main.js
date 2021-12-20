@@ -1,3 +1,14 @@
+
+$(function () {
+  $('.menu>li').mouseover(function () {
+    $(this).children('.sub').stop().slideDown()
+  }).mouseout(function () {
+    $('.sub').stop().slideUp();
+  });
+});
+
+
+
 $(window).scroll(function(){
   let wb=$(this).scrollTop();
   if(wb>300){
@@ -148,4 +159,24 @@ setInterval(slide, 3000);
 
 
 
-  
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);}
+function currentSlide(n) {
+  showSlides(slideIndex = n);}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("historyBox");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}

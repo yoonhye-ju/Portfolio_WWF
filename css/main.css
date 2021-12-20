@@ -4,25 +4,34 @@
 ul, li, ol{list-style: none;}
 a{text-decoration: none; color: #666;}
 
-.container{width: 1200px; height: 100%; margin: 0 auto; background-color: beige;}
+.container{width: 1200px; height: 100%; margin: 0 auto; background-color: aliceblue;}
 
 #top{width: 100%; height: 937px; margin:0 auto; position:relative;}
 header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
 nav{width: 100%; height:70px;}
 #logo{float: left; margin-left: 3%;}
-nav ul{width: 70%; height: 70px; float: right; display: flex; justify-content: space-around; align-items: center;}
-nav ul li{font-size: 13px;}
-#main{width: 100%; height: 937px; z-index: 1; position:absolute; top:0; left:0}
+/* nav ul{width: 70%; } */
+#main{width: 100%; height: 937px; z-index: 1; position:absolute; top:0; left:0;}
+
+
+.menu{width: 70%; height: 70px; float: right; }
+.menu>li{width: 16%; line-height: 30px; text-align: center; font-size: 12px; float: right;}
+.menu>li:hover{font-weight: bold;}
+
+.sub{display: none;}
+.sub li{display: block;}
+
+
 
 #slidewrap{width: 100%; height: 937px; overflow: hidden;}
 .slide{width: 500vw; position: relative; }
 .slide>li{width: 100vw; height: 937px; background-position: center; background-size: cover; float:left;}
 
-#contents{width: 100%; height: 940px; background-color: darkgoldenrod;}
+#contents{width: 100%; height: 940px;}
 .contents_left{width: 50%; height: 100%; float: left; background-image:url(../img/pic_work.jpg); background-position: center; background-size: cover;}
 
-.contents_right{width: 50%; height: 100%; float: right; background-color: darkolivegreen;}
-.contents_work{width: 100%; height: 90%; margin: 8% 0 0 0; background-color: dimgray; display: flex; flex-direction: column;}
+.contents_right{width: 50%; height: 100%; float: right;}
+.contents_work{width: 100%; height: 90%; margin: 8% 0 0 0; display: flex; flex-direction: column;}
 .workbox1{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1s; opacity: 0;}
 .workbox2{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1.2s; opacity: 0;}
 .workbox3{width: 100%; height: 20%; background-color: white; transform: translateY(100px); transition: all 1.4s; opacity: 0;}
@@ -43,45 +52,45 @@ nav ul li{font-size: 13px;}
 .work_text p{font-size: 13px; line-height: 20px;}
 
 
-#middle{width: 100%; height: 500px; background-color: burlywood;}
-.middle_right{width: 50%; height: 100%; float: right; background-color:darkgreen;}
-.middle_left{width: 50%; height: 100%; float: left; padding: 3%; background-color: cornflowerblue;}
+#middle{width: 100%; height: 500px; background-color:}
+.middle_right{width: 50%; height: 100%; float: right;}
+.middle_left{width: 50%; height: 100%; float: left; padding: 3%;}
 .middle_textbox{text-align: right;}
 .middle_textbox>h1{font-size: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 2s; opacity: 0;}
 .middle_textbox p{font-size: 15px; line-height: 25px; transform: translateY(100px); transition: all 2s; opacity: 0;}
 
 
-#counts{width: 100%; height: 25%; display: flex; justify-content: space-around; background-color: darkorange; margin-top: 50px; transform: translateY(100px); transition: all 2s; opacity: 0;}
-.countBox1{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
-.countBox2{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
-.countBox3{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
-.countBox4{width: 23%; height: 100%; text-align: center; padding-top: 5%; background-color:firebrick;}
+#counts{width: 100%; height: 25%; display: flex; justify-content: space-around; margin-top: 50px; transform: translateY(100px); transition: all 2s; opacity: 0;}
+.countBox1{width: 23%; height: 100%; text-align: center; padding-top: 5%;}
+.countBox2{width: 23%; height: 100%; text-align: center; padding-top: 5%;}
+.countBox3{width: 23%; height: 100%; text-align: center; padding-top: 5%;}
+.countBox4{width: 23%; height: 100%; text-align: center; padding-top: 5%;}
 .number{margin-bottom: 3%;}
 .numberP{font-size: 14px;}
 
 
 
-#wwfStory{width: 100%; height: 800px; background-color: gray; padding: 50px;}
-.wwfStorybox{width: 100%; height: 100%; background-color: burlywood;}
-.wwfStorybox_index{width: 100%; height: 150px; display: flex; justify-content: center; align-items: center; background-color: cornflowerblue;}
-.wwfStorybox_text{width: 20%; height: auto; text-align: center; background-color:darkgoldenrod;}
+#wwfStory{width: 100%; height: 800px; padding: 50px;}
+.wwfStorybox{width: 100%; height: 100%;}
+.wwfStorybox_index{width: 100%; height: 150px; display: flex; justify-content: center; align-items: center;}
+.wwfStorybox_text{width: 20%; height: auto; text-align: center;}
 
-.wwfStorybox_left{width: 45%; height: 550px; float: left; background-color: darkkhaki;}
+.wwfStorybox_left{width: 45%; height: 550px; float: left;}
 .wwfStorybox_left>img{width: 100%; height: 100%; background-size: cover; background-position: center;}
 
-.wwfStorybox_right{width: 55%; height: 550px; float: right; padding: 3%; background-color: darkolivegreen;}
+.wwfStorybox_right{width: 55%; height: 550px; float: right; padding: 3%;}
 
-.wwfStorybox_rightText{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; background-color:  darksalmon;}
+.wwfStorybox_rightText{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around;}
 .wwfStorybox_rightText h4{line-height: 30px;}
 
 
-#detail{width: 100%; height: 50px; background-color: dodgerblue;}
+#detail{width: 100%; height: 50px; background-color:}
 .more{width: 30%; height: 50px; border-radius: 3px; display: flex; justify-content:center; align-items:center; float:left; background-color:   darkorange;}
 
 .another{width: 30%; height: 50px; border-radius: 3px; display: flex; justify-content:center; align-items:center; float: right; margin-right: 35%; background-color:darkturquoise;}
 
 
-#movies{width: 100%; height: 300px; background-color: gold;}
+#movies{width: 100%; height: 300px;}
 .movies_pic{display: flex; flex-direction: row; cursor: zoom-in;}
 .movie{display: flex; flex-direction: row; width: 100%; height: 100%; background-color: white; position: relative;}
 .movie:hover > img{opacity: 0.7;}
@@ -95,13 +104,29 @@ nav ul li{font-size: 13px;}
 #close{background-color: black; border: none; color: #666; width: 15%; height: 15%; font-size: 20px; cursor: pointer;}
 
 
-#history{width: 100%; height: 700px; background-image: url(../img/pic_history.jpg); background-position: center; background-size: cover;}
+#history{width: 100%; height: 700px; background-image: url(../img/pic_history.jpg); background-position: center; background-size: cover; margin: 10px auto; color: white;}
 .container>h1{text-align: center; padding-top: 100px;}
+.logoHistory{width: 70px; margin-top: 50px; margin-left:47%; float: left;}
 
-#history_slide{width: 80%; height: 400px; position: relative;background-color: cadetblue; margin: 0 auto;}
-.historyBox{width: 80%; height: 300px; margin: 150px auto; text-align: center; background-color: blanchedalmond;}
+.historyBox{width: 80%; height: 200px; margin: 150px auto; text-align: center; }
+.historyBox {-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}
+.historyBox:not(:first-of-type){display: none;}
 .historyBox ul{width: 100%; margin-top: 30px; display: flex; flex-direction: column;}
 .historyBox ul li{line-height: 30px;}
 
-.historyBox_button{width: 20%; height: 50px; background-color: blueviolet; float: left; display: flex; flex-wrap: row; justify-content: space-around; position: absolute; top: 80%; left: 40%;}
-.btn{width:20px; height: 20px; border-radius: 50%;  border: 4px solid white; cursor: pointer;}
+.dotBox{text-align: center;}
+
+.dot {cursor: pointer; width: 15px; height: 15px; margin: 0 5px; background-color: white; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; border: 2px solid white;}
+
+.active, .dot:hover {
+  background-color: #2da070;}
+
+@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+
+#protect{width: 100%; height: 1000px; background-color: blanchedalmond;}
+.protectBox{width: 100%; display: flex; flex-wrap: wrap;}
+.protectBox>img{width: 25%;}
+.space{width:20%; height: 200px; background-color: white; margin-left: 5%; margin-top: -10%; padding: 1.5%; line-height: 28px;}

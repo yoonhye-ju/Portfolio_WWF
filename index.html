@@ -21,13 +21,51 @@
     <div class="container">
     <nav>
       <a href="index.html"><img src="img/logo_small.png" alt="logo" id="logo"></a>
-      <ul>
-        <li><a href="#">WWF</a></li>
-        <li><a href="#">ACTIVITY</a></li>
-        <li><a href="#">CAMPAIGN</a></li>
-        <li><a href="#">JOIN</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">SUPPORT</a></li>
+      <ul class="menu">
+        <li><a href="#">WWF</a>
+          <ul class="sub">
+            <li><a href="#">WWF-Korea</a></li>
+            <li><a href="#">함께하는 사람들</a></li>
+            <li><a href="#">연례 보고서</a></li>
+            <li><a href="#">채용</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ACTIVITY</a>
+          <ul class="sub">
+            <li><a href="#">글로벌 활동</a></li>
+            <li><a href="#">국내 활동</a></li>
+          </ul>
+        </li>
+        <li><a href="#">CAMPAIGN</a>
+          <ul class="sub">
+            <li><a href="#">Earth Hour</a></li>
+            <li><a href="#">Our Planet</a></li>
+          </ul>
+        </li>
+        <li><a href="#">JOIN</a>
+          <ul class="sub">
+            <li><a href="#">행사 참여</a></li>
+            <li><a href="#">일상 참여</a></li>
+          </ul>
+        </li>
+        <li><a href="#">NEWS</a>
+          <ul class="sub">
+            <li><a href="#">WWF 레포트</a></li>
+            <li><a href="#">WWF 언론</a></li>
+            <li><a href="#">WWF 이야기</a></li>
+            <li><a href="#">WWF 뉴스</a></li>
+            <li><a href="#">판다 메일</a></li>
+          </ul>
+        </li>
+        <li><a href="#">SUPPORT</a>
+          <ul class="sub">
+            <li><a href="#">후원 안내</a></li>
+            <li><a href="#">정기 후원</a></li>
+            <li><a href="#">일시 후원</a></li>
+            <li><a href="#">기업 후원</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
@@ -231,7 +269,7 @@
 <div id="history">
   <div class="container">
     <h1>WWF History</h1>
-    <div id="history_slide">
+    <img src="img/logo.png" alt="logo" class="logoHistory">
       <div class="historyBox">
         <h2>1960년대</h2>
         <ul>
@@ -243,7 +281,7 @@
         </ul>
       </div>
 
-      <!-- <div class="historyBox">
+      <div class="historyBox">
       <h2>1970년대</h2>
       <ul>
         <li>1971년: 습지에 관한 18개국 정부간 협약</li>
@@ -285,19 +323,42 @@
         <li>2009년: 세계에서 가장 풍족한 해양지대 수호</li>
         <li>2010년: 세계 최대 환경 운동 이벤트 지구촌 전등끄기 어스아워(Earth Hour) 캠페인</li>
       </ul>
-    </div> -->
+    </div>
 
-      <div class="historyBox_button">
-        <button type="checkbox" class="btn"></button>
-        <button type="checkbox" class="btn"></button>
-        <button type="checkbox" class="btn"></button>
-        <button type="checkbox" class="btn"></button>
-        <button type="checkbox" class="btn"></button>
+    <div class="dotBox">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+    </div>
+</div>
+</div>
+
+<div id="protect">
+  <div class="container">
+    <div class="protectBox">
+      <img src="img/pic_elephant.jpg" alt="elephant">
+      <img src="img/pic_panda.jpg" alt="panda">
+      <img src="img/pic_tiger.jpg" alt="tiger">
+      <img src="img/pic_polarbear.jpg" alt="polarbear">
+      <div class="space">
+        <h3>멸종위기종 보전:<br>아시아코끼리</h3>
+      </div>
+      <div class="space">
+        <h3>멸종위기종 보전:<br>거대판다</h3>
+      </div>
+      <div class="space">
+        <h3>멸종위기종 보전:<br>호랑이</h3>
+      </div>
+      <div class="space">
+        <h3>멸종위기종 보전:<br>북극곰</h3>
       </div>
     </div>
   </div>
 </div>
-</div>
+
 
 <footer>
   <div class="container"></div>
