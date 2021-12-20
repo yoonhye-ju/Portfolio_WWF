@@ -4,13 +4,12 @@
 ul, li, ol{list-style: none;}
 a{text-decoration: none; color: #666;}
 
-.container{width: 1200px; height: 100%; margin: 0 auto; background-color: aliceblue;}
+.container{width: 1200px; height: 100%; margin: 0 auto;}
 
 #top{width: 100%; height: 937px; margin:0 auto; position:relative;}
 header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
 nav{width: 100%; height:70px;}
 #logo{float: left; margin-left: 3%;}
-/* nav ul{width: 70%; } */
 #main{width: 100%; height: 937px; z-index: 1; position:absolute; top:0; left:0;}
 
 
@@ -20,7 +19,6 @@ nav{width: 100%; height:70px;}
 
 .sub{display: none;}
 .sub li{display: block;}
-
 
 
 #slidewrap{width: 100%; height: 937px; overflow: hidden;}
@@ -46,13 +44,13 @@ nav{width: 100%; height:70px;}
 .workbox6:hover{background-color: aliceblue;}
 
 
-.work_icon{width: 25%; height: 100%; float: left; background-color: aquamarine;}
+.work_icon img{width: 15%; float: left; margin-left: 5%; margin-top: 5%;}
 .work_text{width: 75%; height: 100%; float: right; display: flex; align-content: center; flex-direction: column; padding: 3%;}
 .work_text>h3{font-size: 15px; margin-bottom: 11px;}
 .work_text p{font-size: 13px; line-height: 20px;}
 
 
-#middle{width: 100%; height: 500px; background-color:}
+#middle{width: 100%; height: 500px;}
 .middle_right{width: 50%; height: 100%; float: right;}
 .middle_left{width: 50%; height: 100%; float: left; padding: 3%;}
 .middle_textbox{text-align: right;}
@@ -84,7 +82,7 @@ nav{width: 100%; height:70px;}
 .wwfStorybox_rightText h4{line-height: 30px;}
 
 
-#detail{width: 100%; height: 50px; background-color:}
+#detail{width: 100%; height: 50px;}
 .more{width: 30%; height: 50px; border-radius: 3px; display: flex; justify-content:center; align-items:center; float:left; background-color:   darkorange;}
 
 .another{width: 30%; height: 50px; border-radius: 3px; display: flex; justify-content:center; align-items:center; float: right; margin-right: 35%; background-color:darkturquoise;}
@@ -126,7 +124,25 @@ nav{width: 100%; height:70px;}
 @keyframes fade {from {opacity: .4} to {opacity: 1}}
 
 
-#protect{width: 100%; height: 1000px; background-color: blanchedalmond;}
+#protect{width: 100%; height: 600px;}
 .protectBox{width: 100%; display: flex; flex-wrap: wrap;}
-.protectBox>img{width: 25%;}
-.space{width:20%; height: 200px; background-color: white; margin-left: 5%; margin-top: -10%; padding: 1.5%; line-height: 28px;}
+.protectBox img{width: 25%;}
+
+.space1{width:20%; height: 200px; background-color: white; margin-left: 5%; margin-top: -10%; padding: 1.5%; line-height: 28px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.space2{width:20%; height: 200px; background-color: white; margin-left: 5%; margin-top: -10%; padding: 1.5%; line-height: 28px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.space3{width:20%; height: 200px; background-color: white; margin-left: 5%; margin-top: -10%; padding: 1.5%; line-height: 28px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.space4{width:20%; height: 200px; background-color: white; margin-left: 5%; margin-top: -10%; padding: 1.5%; line-height: 28px; transform: translateY(100px); transition: all 1s; opacity: 0;}
+.space1 span{width: 100px; height: 50px; background-color: burlywood; border-radius: 3px; font-size: 11px; padding: 8px; margin-top: 5px;}
+.space2 span{width: 100px; height: 50px; background-color: burlywood; border-radius: 3px; font-size: 11px; padding: 8px; margin-top: 5px;}
+.space3 span{width: 100px; height: 50px; background-color: burlywood; border-radius: 3px; font-size: 11px; padding: 8px; margin-top: 5px;}
+.space4 span{width: 100px; height: 50px; background-color: burlywood; border-radius: 3px; font-size: 11px; padding: 8px; margin-top: 5px;}
+.space1 p{font-size: 14px; line-height: 25px; margin: 10px auto;}
+.space2 p{font-size: 14px; line-height: 25px; margin: 10px auto;}
+.space3 p{font-size: 14px; line-height: 25px; margin: 10px auto;}
+.space4 p{font-size: 14px; line-height: 25px; margin: 10px auto;}
+
+
+.elephant{transform: translateY(100px); transition: all 1s; opacity: 0;}
+.panda{ transform: translateY(100px); transition: all 1.2s; opacity: 0;}
+.tiger{ transform: translateY(100px); transition: all 1.4s; opacity: 0;}
+.polarbear{transform: translateY(100px); transition: all 1.6s; opacity: 0;}

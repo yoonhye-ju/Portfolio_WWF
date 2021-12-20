@@ -38,6 +38,28 @@ $(window).scroll(function(){
   if(wb>1000){
     $('#counts').css("transform","translateY(0px)").css("opacity","1");
   } 
+
+  if(wb>3300){
+    $('.elephant').css("transform","translateY(0px)").css("opacity","1");
+  }
+
+  if(wb>3350){
+    $('.panda').css("transform","translateY(0px)").css("opacity","1");
+  }
+  if(wb>3400){
+    $('.tiger').css("transform","translateY(0px)").css("opacity","1");
+    $('.space1').css("transform","translateY(0px)").css("opacity","1");
+  }
+  if(wb>3450){
+    $('.polarbear').css("transform","translateY(0px)").css("opacity","1");
+    $('.space2').css("transform","translateY(0px)").css("opacity","1");
+  }
+  if(wb>3500){
+  $('.space3').css("transform","translateY(0px)").css("opacity","1");
+  }
+  if(wb>3600){
+  $('.space4').css("transform","translateY(0px)").css("opacity","1");
+  }
 });
 
 
@@ -180,3 +202,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
