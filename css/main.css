@@ -2,7 +2,7 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 ul, li, ol{list-style: none;}
-a{text-decoration: none; color: #666;}
+a{text-decoration: none;}
 
 .container{width: 1200px; height: 100%; margin: 0 auto;}
 
@@ -13,17 +13,35 @@ nav{width: 100%; height:70px;}
 #main{width: 100%; height: 937px; z-index: 1; position:absolute; top:0; left:0;}
 
 
-.menu{width: 70%; height: 70px; float: right; }
+.menu{width: 70%; height: 70px; float: right; font-weight: bold;}
 .menu>li{width: 16%; line-height: 30px; text-align: center; font-size: 12px; float: right;}
-.menu>li:hover{font-weight: bold;}
 
 .sub{display: none;}
 .sub li{display: block;}
+.sub li:hover{text-decoration: underline;}
 
 
-#slideup{width: 100%; height: 100%; background-color:white; opacity: 0.7; transform: skewX(233deg) translateX(-80%); position: absolute; left: 50%;}
+#slideup{width: 100%; height: 100%; background-color:white; opacity: 0.6; transform: skewX(233deg) translateX(-80%); position: absolute; left: 50%;}
 
-.slideup_Text{width: 100%; height:500px;}
+.slideup_Text1{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
+.slideup_Text1>h1{font-size: 40px; margin-bottom: 25px;}
+.slideup_Text1 p{font-size: 20px; line-height: 35px;}
+
+.slideup_Text2{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
+.slideup_Text2>h1{font-size: 40px; margin-bottom: 25px;}
+.slideup_Text2 p{font-size: 20px; line-height: 35px;}
+
+.slideup_Text3{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
+.slideup_Text3>h1{font-size: 40px; margin-bottom: 25px;}
+.slideup_Text3 p{font-size: 20px; line-height: 35px;}
+
+.slideup_Text4{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
+.slideup_Text4>h1{font-size: 40px; margin-bottom: 25px;}
+.slideup_Text4 p{font-size: 20px; line-height: 35px;}
+
+.slideup_Text5{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
+.slideup_Text5>h1{font-size: 40px; margin-bottom: 25px;}
+.slideup_Text5 p{font-size: 20px; line-height: 35px;}
 
 
 #slidewrap{width: 100%; height: 937px; overflow: hidden;}
@@ -168,9 +186,10 @@ nav{width: 100%; height:70px;}
 .press_picBox h6{margin-bottom: 30px;}
 .press_picBox span{width: 100px; height: 50px; background-color: burlywood; border-radius: 3px; font-size: 11px; padding: 8px; cursor: pointer;}
 
-footer{width: 100%; height: 400px; color: white; background-color: black;}
-footer>.container{display: flex;}
-.wwf_left{width:50%; height: 300px; padding: 5%; line-height: 25px;}
-.wwf_right{width:50%; height: 300px; padding: 5%; line-height: 25px;}
+footer{width: 100%; height: 350px; color: white; background-color: black;}
+#wwf_text{display: flex;}
+.wwf_left{width:50%; height: 300px; padding: 5%; line-height: 30px;}
+.wwf_right{width:50%; height: 300px; padding: 5%; line-height: 30px;}
+.wwf_bottom{width: 100%; text-align: center;}
 .wwf_left>ul>li:not(:first){font-size: 12px;}
 .wwf_right>ul>li:not(:first){font-size: 12px;}

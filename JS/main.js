@@ -179,6 +179,11 @@ function slide() {
 }
 setInterval(slide, 5000);
 
+function fadeIn(){
+  $('.slideup_Text1').fadeIn('fast', 1000);
+  $('.slideup_Text1').fadeOut('fast', 1000);
+}
+setInterval(fadeIn, 5000);
 
 
 let slideIndex = 1;
