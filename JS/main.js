@@ -175,14 +175,16 @@ function slide() {
   $('.slide').stop().animate({ marginLeft: -w}, function () {
     $('.slide li:first').appendTo('.slide');
     $('.slide').css({ marginLeft: 0 });
+    $('#slidup').css("transform","translateX(-90%)");
   });
 }
-setInterval(slide, 5000);
+// setInterval(slide, 5000);
 
-$(document).ready(function(){
-  $('#slideup').animate({marginLeft:1000}, function(){
-    $('.slideup_Text1').animate({marginTop:500});   
-  });
+// $(document).ready(function(){
+//   $('#slideup').on('show animate{marginLeft:-2000}', function(){
+//     $('#slideup').animate({marginLeft:10}),function(){}
+//     $('.slideup_Text1').animate({marginTop:500});
+//   });
 //   $('#slideup').animate(2000, function(){
 //     $('.slideup_Text2').showSlides(2000);
 //   });
@@ -195,16 +197,16 @@ $(document).ready(function(){
 //   $('#slideup').animate(5000, function(){
 //     $('.slideup_Text4').showSlides(5000);
 // });
-});
+// });
 
 
 
 
-function fadeIn(){
-  $('.slideup_Text1').fadeIn('fast', 1000);
-  $('.slideup_Text1').fadeOut('fast', 1000);
-}
-setInterval(fadeIn, 5000);
+// function fadeIn(){
+//   $('.slideup_Text1').fadeIn('fast', 1000);
+//   $('.slideup_Text1').fadeOut('fast', 1000);
+// }
+// setInterval(fadeIn, 5000);
 
 
 let slideIndex = 1;
@@ -217,6 +219,7 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("historyBox");
   let dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
