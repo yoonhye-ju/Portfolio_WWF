@@ -166,29 +166,14 @@ $(document).ready(function(){
   });
 });
 
-
 function slide() {
   let w=window.innerWidth; 
   $('.slide').stop().animate({ marginLeft: -w}, function () {
     $('.slide li:first').appendTo('.slide');
     $('.slide').css({ marginLeft: 0 });
-    $('#slidup').css("transform","translateX(-90%)");
   });
 }
-setInterval(slide, 8000);
-
-$(function(){
-  $('#slideup1').show().stop().animate({marginLeft:"-2500px"},0)
-  .animate({marginLeft:'150px'},800).delay(6000).fadeOut(1000);
-  $('.slideup_Text1').slideDown(4000).delay(3400).fadeOut(600);
-});
-
-// if('.slide li:nth-of-type(2)', function(){
-//   $('#slideup2').show().animate({marginLeft:"-2500px"},0)
-//   .animate({marginLeft:'150px'},800).delay(6000).fadeOut(1000);
-//   $('.slideup_Text2').slideDown(3000).delay(4000).fadeOut(1000);
-// });
-
+setInterval(slide, 5000);
 
 
 let slideIndex = 1;

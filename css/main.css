@@ -2,7 +2,7 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 ul, li, ol{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none; color: black;}
 body{font-family: 'YeolrinGothic-Light';}
 
 .container{width: 1200px; height: 100%; margin: 0 auto;}
@@ -11,7 +11,6 @@ body{font-family: 'YeolrinGothic-Light';}
 header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
 nav{width: 100%; height:70px;}
 #logo{float: left; margin-left: 3%;}
-/* #main{width: 100%; height: 937px; z-index: 1; position:absolute; top:0; left:0;} */
 
 
 .menu{width: 70%; height: 70px; float: right; font-weight: bold;}
@@ -20,29 +19,6 @@ nav{width: 100%; height:70px;}
 .sub{display: none;}
 .sub li{display: block;}
 .sub li:hover{text-decoration: underline;}
-
-
-#slideup{width: 100%; height: 100%; background-color:white; opacity: 0.6; transform: skewX(233deg) translateX(-90%); position: absolute; left: 50%; }
-
-.slideup_Text1{width: 40%; padding: 1%; position: absolute; margin-top: 480px; }
-.slideup_Text1>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
-.slideup_Text1 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
-
-.slideup_Text2{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
-.slideup_Text2>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
-.slideup_Text2 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
-
-.slideup_Text3{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
-.slideup_Text3>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
-.slideup_Text3 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
-
-.slideup_Text4{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
-.slideup_Text4>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
-.slideup_Text4 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
-
-.slideup_Text5{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
-.slideup_Text5>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
-.slideup_Text5 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
 
 
 #slidewrap{width: 100%; height: 937px; overflow: hidden;}
