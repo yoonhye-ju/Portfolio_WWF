@@ -22,13 +22,17 @@ nav{width: 100%; height:70px;}
 .sub li:hover{text-decoration: underline;}
 
 
-#slideup{width: 100%; height: 100%; background-color:white; opacity: 0.6; transform: skewX(233deg) translateX(-90%); position: absolute; left: 50%; }
+#slideup1{width: 100%; height: 100%; background-color:white; opacity: 0.6; transform: skewX(233deg) translateX(-90%); position: absolute; left: 50%; display: none;}
 
-.slideup_Text1{width: 40%; padding: 1%; position: absolute; margin-top: 480px; }
+#slideup2{width: 100%; height: 100%; background-color:white; opacity: 0.6; transform: skewX(233deg) translateX(-90%); position: absolute; left: 50%; display: none;}
+
+.slideBox{width: 100%; height: 40%; margin-top: 480px;}
+
+.slideup_Text1{width: 40%; padding: 1%; position: absolute;display: none;}
 .slideup_Text1>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
 .slideup_Text1 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
 
-.slideup_Text2{width: 60%; padding: 5%; position: absolute; margin-top: 480px;}
+.slideup_Text2{width: 60%; padding: 5%; position: absolute; display: none;}
 .slideup_Text2>h1{font-size: 40px; margin-bottom: 25px; font-family: 'S-CoreDream-5Medium';}
 .slideup_Text2 p{font-size: 20px; line-height: 35px; font-family: 'RIDIBatang';}
 
@@ -123,17 +127,13 @@ nav{width: 100%; height:70px;}
 .movies_pic{display: flex; flex-direction: row; cursor: zoom-in;}
 .movie{display: flex; flex-direction: row; width: 100%; height: 100%; background-color: white; position: relative;}
 .movie:hover > img{opacity: 0.7;}
-.icon_video1{position: absolute; top: 40%; left: 40%; display: none;}
-.icon_video2{position: absolute; top: 40%; left: 40%; display: none;}
-.icon_video3{position: absolute; top: 40%; left: 40%; display: none;}
-.icon_video4{position: absolute; top: 40%; left: 40%; display: none;}
+.icon_video{position: absolute; top: 40%; left: 40%; display: none;}
 
-.popup1{width: 80%; height:  80%; background-color: black; position: absolute; top: 50%; height: 50%; display: none; z-index: 3;}
-.popup2{width: 80%; height:  80%; background-color: black; position: absolute; top: 50%; height: 50%; display: none; z-index: 3;}
-.popup3{width: 80%; height:  80%; background-color: black; position: absolute; top: 50%; height: 50%; display: none; z-index: 3;}
-.popup4{width: 80%; height:  80%; background-color: black; position: absolute; top: 50%; height: 50%; display: none; z-index: 3;}
+#pop {width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0, 0, 0, 0.8); display: none;}
+.popup{width: 1200px; height: 80%; background-color: black; position: absolute; top: 50%; left: 50%; display: none; z-index: 3; transform: translate(-50%,-50%);}
 
-#close{background-color: black; border: none; color: #666; width: 15%; height: 15%; font-size: 20px; cursor: pointer;}
+
+.close{background-color: black; border: none; color: white; width: 5%; height: 5%; font-size: 20px; cursor: pointer; float: right;}
 
 
 #history{width: 100%; height: 700px; background-image: url(../img/pic_history.jpg); background-position: center; background-size: cover; margin: 10px auto 0;}
