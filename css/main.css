@@ -2,6 +2,8 @@
 
 @media(min-width:1200px){
 
+  .container{width: 1200px; height: 100%; margin: 0 auto;}
+
 #slidewrap{width: 100%; height: 937px; overflow: hidden;}
 .slide{width: 500vw; position: relative; }
 .slide>li{width: 100vw; height: 937px; background-position: center; background-size: cover; float:left; position: relative;}
@@ -66,7 +68,7 @@
 .wwfStorybox_left{width: 45%; height: 550px; float: left;}
 .wwfStorybox_left>img{width: 100%; height: 100%; background-size: cover; background-position: center;}
 
-.wwfStorybox_right{width: 55%; height: 550px; float: right; padding: 3%;}
+.wwfStorybox_right{width: 50%; height: 550px; float: left; padding: 3%;}
 
 .wwfStorybox_rightText{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: space-around;}
 .wwfStorybox_rightText h2{font-family: 'S-CoreDream-5Medium';}

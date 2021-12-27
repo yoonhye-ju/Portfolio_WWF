@@ -6,7 +6,7 @@ ul, li, ol{list-style: none;}
 a{text-decoration: none; color: black;}
 body{font-family: 'YeolrinGothic-Light';}
 
-.container{width: 1200px; height: 100%; margin: 0 auto;}
+.menuButton{display: none;}
 
 #top{width: 100%; height: 937px; margin:0 auto; position:relative;}
 header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
@@ -41,7 +41,8 @@ footer{width: 100%; height: 350px; color: white; background-color: black;}
   a{text-decoration: none; color: black;}
   body{font-family: 'YeolrinGothic-Light';}
   
-  
+  .menuButton{display: none;}
+
   #top{width: 100%; height: 937px; margin:0 auto; position:relative;}
   header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
   nav{width: 100%; height:70px;}
@@ -69,14 +70,14 @@ footer{width: 100%; height: 350px; color: white; background-color: black;}
   }
 
 
-
-  @media(min-width:600px) and (max-width: 990px){
+  @media(min-width:850px) and (max-width: 990px){
     *{margin: 0; padding: 0; box-sizing: border-box;}
     ul, li, ol{list-style: none;}
     a{text-decoration: none; color: black;}
     body{font-family: 'YeolrinGothic-Light';}
     
-    
+    .menuButton{display: none;}
+
     #top{width: 100%; height: 937px; margin:0 auto; position:relative;}
     header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
     nav{width: 100%; height:70px;}
@@ -93,11 +94,48 @@ footer{width: 100%; height: 350px; color: white; background-color: black;}
     
     footer{width: 100%; height: 350px; color: white; background-color: black;}
     #wwf_text{display: flex;}
-    .wwf_left{width:50%; height: 300px; padding: 5%; line-height: 30px;}
+    .wwf_left{width:50%; height: 300px; padding: 5%; padding-left: 18%; line-height: 30px;}
     .wwf_left ul>li>b{font-family: 'S-CoreDream-4Regular';}
     .wwf_right{width:50%; height: 300px; padding: 5%; line-height: 30px;}
     .wwf_right ul>li>b{font-family: 'S-CoreDream-4Regular';}
     .wwf_bottom{width: 100%; text-align: center;}
+    .wwf_bottom>p{font-family: 'S-CoreDream-3Light'; font-size: 12px}
+    .wwf_left>ul>li:not(:first-of-type){font-size: 12px;}
+    .wwf_right>ul>li:not(:first-of-type){font-size: 12px;}
+    }
+
+
+
+
+  @media(min-width:600px) and (max-width: 849px){
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    ul, li, ol{list-style: none;}
+    a{text-decoration: none; color: black;}
+    body{font-family: 'YeolrinGothic-Light';}
+    
+    
+    #top{width: 100%; height: 937px; margin:0 auto; position:relative;}
+    header{width: 100%; height: 100px; padding-top: 30px; position:absolute; top:0; left:0; right:0; margin:0 auto; z-index: 10;}
+    nav{width: 100%; height:70px; display: flex; justify-content: space-between; flex-flow: wrap;}
+    #logo{margin-left: 30px; display: block;}
+    .menuButton{cursor: pointer; margin-right: 3%; width: 40px; height: 40px; margin-top:10px;}
+    
+    
+    .menu{width: 100%; height: 70px; font-weight: bold; display:none;}
+    .menu>li{width: 100%; line-height: 30px; font-size: 12px; display: block;}
+    
+    .sub{display: none;}
+    .sub li{display: block;}
+    .sub li:hover{background-color: white; opacity: 0.8;}
+    
+    
+    footer{width: 100%; height: 380px; color: white; background-color: black;}
+    #wwf_text{display: flex;}
+    .wwf_left{width:50%; height: 300px; padding: 5%; padding-left: 10%; line-height: 30px;}
+    .wwf_left ul>li>b{font-family: 'S-CoreDream-4Regular';}
+    .wwf_right{width:50%; height: 300px; padding: 5%; line-height: 30px;}
+    .wwf_right ul>li>b{font-family: 'S-CoreDream-4Regular';}
+    .wwf_bottom{width: 100%; text-align: center; padding:3%}
     .wwf_bottom>p{font-family: 'S-CoreDream-3Light'; font-size: 12px; padding: 1.55%;}
     .wwf_left>ul>li:not(:first-of-type){font-size: 12px;}
     .wwf_right>ul>li:not(:first-of-type){font-size: 12px;}
