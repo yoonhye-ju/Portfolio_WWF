@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.container{width: 1200px; height: 100%; margin: 0 auto;}
+
+
+
+.donateLeft{width: 13%; height: 188px; float:left; margin-top:300px; background-color: white; display: flex; flex-direction: column; padding: 1%; border-top: solid 8px black; opacity: 0.8;}
+.box{width: 100%; height: 30px;}
+.box>p{line-height: 30px;}
+.donateRight{width: 85%; height: 1900px; float: right; background-color: white; margin: 300px auto 0; padding: 8%; border-top: solid 8px black;}
+
+.donateBox{width: 100%; height: 500px; background-color: rgb(243, 164, 45);}
+.donateBox_row{width: 100%; height: 60px; background-color: cadetblue; line-height: 55px; margin-bottom: 10px;}
+.rowLeft{width: 30%; height: 60px; float: left; }
+.rowRight{width: 70%; height: 60px;}
+
+#back{width: 100%; height: 2300px; position: relative; background-image: url(../img/sub_backgroundC.jpg); background-attachment: fixed; background-position: center;}
