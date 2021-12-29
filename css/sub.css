@@ -10,8 +10,13 @@
 .donateRight{width: 85%; height: 1900px; float: right; background-color: white; margin: 300px auto 0; padding: 8%; border-top: solid 8px black;}
 
 .donateBox{width: 100%; height: 500px; background-color: rgb(243, 164, 45);}
-.donateBox_row{width: 100%; height: 60px; background-color: cadetblue; line-height: 55px; margin-bottom: 10px;}
-.rowLeft{width: 30%; height: 60px; float: left; }
-.rowRight{width: 70%; height: 60px;}
+.donateBox_row{width: 100%; height: 60px; background-color: cadetblue; line-height: 60px; margin-bottom: 10px;}
+.rowLeft{width: 30%; height: 60px; float: left;}
+.rowRight{width: 70%; height: 60px; display: flex;}
+.long{border: none; background-color: transparent; font-size: 15px; margin-right: 50px;}
+.temporary{border: none; background-color: transparent; font-size: 15px; margin-right: 50px;}
+button{border: none; background-color: transparent; font-size: 15px; margin-right: 40px;}
+.self{width: 100px; height: 30px; margin-top: 15px; padding: 2px;}
+
 
 #back{width: 100%; height: 2300px; position: relative; background-image: url(../img/sub_backgroundC.jpg); background-attachment: fixed; background-position: center;}
