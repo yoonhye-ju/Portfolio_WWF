@@ -77,48 +77,198 @@
 
 <div id="back">
   <div class="container">
-    <div class="donateLeft">
-      <div class="box">
-        <p>후원 안내</p>
-      </div>
-      <div class="box">
-        <p>정기 후원</p>
-      </div>
-      <div class="box">
-        <p>일시 후원</p>
-      </div>
-      <div class="box">
-        <p>기업 후원</p>
-      </div>
-      <div class="box">
-        <p>자주 묻는 질문</p>
-      </div>
-    </div>
-    <div class="donateRight">
-      <div class="donateBox">
-        <div class="donateBox_row">
-        <h3>후원 정보</h3>
-      </div>
-      <div class="donateBox_row">
-        <div class="rowLeft">모금상품</div>
-        <div class="rowRight">세계자연기금 후원</div>
-      </div>
-      <div class="donateBox_row">
-        <div class="rowLeft">후원주기</div>
-        <div class="rowRight">
-          <button class="long">정기 후원</button>
-          <button class="temporary">일시 후원</button>
+      <div class="donateLeft">
+        <div class="box">
+          <p>후원 안내</p>
+        </div>
+        <div class="box">
+          <p>정기 후원</p>
+        </div>
+        <div class="box">
+          <p>일시 후원</p>
+        </div>
+        <div class="box">
+          <p>기업 후원</p>
+        </div>
+        <div class="box">
+          <p>자주 묻는 질문</p>
         </div>
       </div>
-      <div class="donateBox_row">
-        <div class="rowLeft">후원금액</div>
-        <div class="rowRight">
-          <button>20,000원</button>
-          <button>30,000원</button>
-          <button>50,000원</button>
-          <input type="text" placeholder="직접입력" class="self">
+
+      <div class="donateRight">
+        <div class="donateBox">
+          <div class="donateBox_row">
+            <h3>후원 금액</h3>
+          </div>
+          <div class="donateBox_row">
+            <div class="rowLeft">모금상품</div>
+            <div class="rowRight">세계자연기금 후원</div>
+          </div>
+          <div class="donateBox_row">
+            <div class="rowLeft">후원주기</div>
+            <div class="rowRight">
+              <button class="long">정기 후원</button>
+              <button class="temporary">일시 후원</button>
+            </div>
+          </div>
+          <div class="donateBox_row">
+            <div class="rowLeft">후원금액</div>
+            <div class="rowRight">
+              <button>20,000원</button>
+              <button>30,000원</button>
+              <button>50,000원</button>
+              <input type="text" placeholder="직접입력" class="self">
+            </div>
+          </div>
+          <div class="donateBox_row">
+            <div class="rowLeft">후원기간</div>
+            <div class="rowRight">
+              <input type="date" class="self">&nbsp;-&nbsp;<input type="date" class="self">
+            </div>
+          </div>
         </div>
-      </div>
+
+        <div id="donate_middle">
+          <div class="middleBox">
+            <div class="middleBox_row">
+              <h3>회원 정보</h3>
+              <p>후원내역 확인 등 마이페이지 이용 시 꼭 필요한 정보입니다.</p>
+            </div>
+            <div class="donateBox_row">
+              <div class="rowLeft">이름</div>
+              <div class="rowRight"><input type="text" placeholder="ex) 홍길동" class="self"></div>
+            </div>
+            <div class="donateBox_row">
+              <div class="rowLeft">휴대전화</div>
+              <div class="rowRight"><input type="tel" placeholder="ex) 010-1234-5678" class="self"></div>
+              </div>
+            </div>
+            <div class="donateBox_row">
+              <div class="rowLeft">이메일</div>
+              <div class="rowRight">
+                <input type="email" class="self">
+                <select class="emails">
+                  <option value="email" selected>이메일 주소</option>
+                  <option value="email">naver.com</option>
+                  <option value="email">hotmail.com</option>
+                  <option value="email">hanmail.net</option>
+                  <option value="email">google.com</option>
+                  <option value="email">outlook.com</option>
+                  <option value="email">korea.com</option>
+                  <option value="email">nate.com</option>
+                  <option value="email1">직접입력</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div id="donate_bottom">
+            <div class="bottomBox">
+              <div class="donateBox_row">
+                <h3>결제 정보</h3>
+              </div>
+              <div class="donateBox_row">
+                <div class="rowLeft">결제 수단</div>
+                <div class="rowRight">
+                  <button class="auto">자동이체</button>
+                  <button class="temporary">신용카드</button>
+                </div>
+              </div>
+              <div class="donateBox_row">
+                <div class="rowLeft">은행명</div>
+                <div class="rowRight">
+                  <input type="text" class="selfBank">
+                  <select class="banks">
+                    <option value="bank" selected>은행명</option>
+                    <option value="bank">국민은행</option>
+                    <option value="bank">우리은행</option>
+                    <option value="bank">신한은행</option>
+                    <option value="bank">하나은행</option>
+                    <option value="bank">기업은행</option>
+                    <option value="bank">수협은행</option>
+                    <option value="bank">신협은행</option>
+                    <option value="bank1" class="bank">직접입력</option>
+                  </select>
+                </div>
+                </div>
+              </div>
+              <div class="donateBox_row">
+                <div class="rowLeft">계좌번호</div>
+                <div class="rowRight">
+                  <input type="text" class="account" placeholder="'-' 를 빼고 입력해주세요.">
+                  <input type="button" value="계좌번호 확인" class="check">
+                </div>
+              </div>
+              <div class="donateBox_row">
+                <div class="rowLeft">예금주명</div>
+                <div class="rowRight">
+                  <input type="text" class="self" placeholder="ex)홍길동">
+                </div>
+              </div>
+              <div class="donateBox_row">
+                <div class="rowLeft">생년월일</div>
+                <div class="rowRight">
+                  <input type="text" class="self" placeholder="주민번호 앞 6자리">
+                </div>
+              </div>
+              <div class="donateBox_row">
+                <div class="rowLeft">출금일</div>
+                <div class="rowRight">
+                  <select class="self">
+                    <option value="money">매 달 1일</option>
+                    <option value="money">매 달 2일</option>
+                    <option value="money">매 달 3일</option>
+                    <option value="money">매 달 4일</option>
+                    <option value="money">매 달 5일</option>
+                    <option value="money">매 달 6일</option>
+                    <option value="money">매 달 7일</option>
+                    <option value="money">매 달 8일</option>
+                    <option value="money">매 달 9일</option>
+                    <option value="money">매 달 10일</option>
+                    <option value="money">매 달 11일</option>
+                    <option value="money">매 달 12일</option>
+                    <option value="money">매 달 13일</option>
+                    <option value="money">매 달 14일</option>
+                    <option value="money">매 달 15일</option>
+                    <option value="money">매 달 16일</option>
+                    <option value="money">매 달 17일</option>
+                    <option value="money">매 달 18일</option>
+                    <option value="money">매 달 19일</option>
+                    <option value="money">매 달 20일</option>
+                    <option value="money">매 달 21일</option>
+                    <option value="money">매 달 22일</option>
+                    <option value="money">매 달 23일</option>
+                    <option value="money">매 달 24일</option>
+                    <option value="money">매 달 25일</option>
+                    <option value="money">매 달 26일</option>
+                    <option value="money">매 달 27일</option>
+                    <option value="money">매 달 28일</option>
+                    <option value="money">매 달 29일</option>
+                    <option value="money">매 달 30일</option>
+                    <option value="money">매 달 31일</option>
+                  </select>
+                </div>
+              </div>
+              <div class="caution">
+                <p>*당일 출금 실패 시 익일 재청구가 시도됩니다.</p>
+                <p>*첫 정기 후원금은 등록 후 가까운 일자에 결제됩니다.(2~3일 소요)</p>
+                <p>*신용카드 후원 시 나이스빌링, 나이스_정기과금,후원금_나이스 또는 Nice로 표시되어 청구됩니다.</p>
+                <p>*해외에서 발급한 계좌번호 및 신용카드는 정기 결제 진행을 할 수 없습니다.</p>
+                <p>*금융정보 도용 시 처벌 받을 수 있습니다.</p>
+              </div>
+            </div>
+
+
+          <div id="donate_checkBox">
+              <input type="checkbox" class="total"> <b>전체 동의하기</b> <br><br>
+              <input type="checkbox" class="index"><span>후원회원약관 동의<b>[보기]</b></span> <br>
+              <input type="checkbox" class="index"><span>개인정보처리방침 동의<b>[보기]</b></span> 
+          </div>
+          
+        <div id="donate_button">
+          <input type="button" class="donateButton" value="후원하기">
+        </div>
+
       </div>
     </div>
   </div>

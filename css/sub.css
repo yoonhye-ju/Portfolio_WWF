@@ -3,20 +3,45 @@
 .container{width: 1200px; height: 100%; margin: 0 auto;}
 
 
+#back{width: 100%; height: 2600px; position: relative; background-image: url(../img/sub_backgroundC.jpg); background-attachment: fixed; background-position: center;}
+
+.self{width: 23%; height: 30px; margin-top: 15px; padding: 2px;}
+
 
 .donateLeft{width: 13%; height: 188px; float:left; margin-top:300px; background-color: white; display: flex; flex-direction: column; padding: 1%; border-top: solid 8px black; opacity: 0.8;}
 .box{width: 100%; height: 30px;}
 .box>p{line-height: 30px;}
-.donateRight{width: 85%; height: 1900px; float: right; background-color: white; margin: 300px auto 0; padding: 8%; border-top: solid 8px black;}
 
-.donateBox{width: 100%; height: 500px; background-color: rgb(243, 164, 45);}
+
+.donateRight{width: 85%; height: 2150px; float: right; background-color: white; margin: 300px auto 0; padding: 8%; border-top: solid 8px black;}
+
+.donateBox{width: 100%; height: 405px; border-bottom: 1px solid black;}
 .donateBox_row{width: 100%; height: 60px; background-color: cadetblue; line-height: 60px; margin-bottom: 10px;}
 .rowLeft{width: 30%; height: 60px; float: left;}
 .rowRight{width: 70%; height: 60px; display: flex;}
-.long{border: none; background-color: transparent; font-size: 15px; margin-right: 50px;}
-.temporary{border: none; background-color: transparent; font-size: 15px; margin-right: 50px;}
-button{border: none; background-color: transparent; font-size: 15px; margin-right: 40px;}
-.self{width: 100px; height: 30px; margin-top: 15px; padding: 2px;}
+.long{border: none; background-color: transparent; font-size: 15px; margin-right: 10%;}
+.temporary{border: none; background-color: transparent; font-size: 15px;  margin-right: 10%;}
+button{border: none; background-color: transparent; font-size: 15px;  margin-right: 10%; cursor:pointer;}
 
 
-#back{width: 100%; height: 2300px; position: relative; background-image: url(../img/sub_backgroundC.jpg); background-attachment: fixed; background-position: center;}
+#donate_middle{width: 100%; height: 350px; border-bottom: 1px solid black; margin-top: 50px;}
+.middleBox_row{width: 100%; height: 80px; background-color: yellowgreen; margin-bottom: 10px; padding-top: 15px;}
+.middleBox_row p{font-size: 14px; padding-top: 5px;}
+.emails{width: 23%; height: 30px; margin-top: 15px; margin-left: 1%; padding: 2px;}
+
+
+#donate_bottom{width: 100%; height: 800px; background-color: lightskyblue; border-bottom: 1px solid black; margin-top: 50px;}
+.banks{width: 23%; height: 30px; margin-top: 15px; padding: 2px;}
+.selfBank{width: 23%; height: 30px; margin-top: 15px; padding: 2px; display: none; margin-right: 1%;}
+.account{width: 30%; height: 30px; margin-top: 15px; margin-right: 3%; padding: 2px;}
+.check{width: 20%; height: 30px; margin-top: 15px; padding: 2px; cursor: pointer; border:none;}
+
+.caution{width: 60%; height: 200px; background-color: lightsteelblue; margin: 50px auto 0; padding: 3%;}
+.caution p{font-size: 13px; line-height: 25px;}
+
+
+#donate_checkBox{width: 100%; height: 150px; background-color: lightskyblue; margin-top: 50px; padding: 3%;}
+.index> span{font-size: 13px;}
+
+#donate_button{width: 100%; height: 80px; background-color: lightskyblue; margin-top: 50px; display: flex; justify-content: center; align-items: center;}
+.donateButton{width: 25%; height: 60px; background-color: aliceblue; border: none; font-size: 15px; cursor: pointer; color: white;}
