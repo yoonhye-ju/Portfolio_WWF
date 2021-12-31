@@ -40,3 +40,23 @@ function selectAll(selectAll) {
     checkbox.checked = selectAll.checked
   })
 }
+
+function load1(){
+  window.open("popup1.html","", "left=800, top=100, width=500, height=800");
+}
+
+function load2(){
+  window.open("popup2.html","", "left=800, top=100, width=500, height=800");
+}
+
+
+$(function () {
+  $('.temporary').click(function () {
+    $("#donate_bottom").hide();
+    $("#donate_bottom2").show();
+  });
+  $('.long').click(function () {
+    $("#donate_bottom").show();
+    $("#donate_bottom2").hide();
+  });
+});

@@ -107,23 +107,37 @@
           <div class="donateBox_row">
             <div class="rowLeft">후원주기</div>
             <div class="rowRight">
-              <button class="long">정기 후원</button>
-              <button class="temporary">일시 후원</button>
+              <div class="long">
+                <button class="longButton"></button>
+                <p>정기 후원</p>
+              </div>
+
+              <div class="temporary">
+                <button class="temporaryButton"></button>
+                <p>일시 후원</p>
+              </div>
+            
             </div>
           </div>
           <div class="donateBox_row">
             <div class="rowLeft">후원금액</div>
             <div class="rowRight">
-              <button>20,000원</button>
-              <button>30,000원</button>
-              <button>50,000원</button>
+              <div class="donateMoney">
+                <button class="donateMoney_Button"></button>
+                <p>30,000원</p>
+              </div>
+            <div class="donateMoney">
+              <button class="donateMoney_Button"></button>
+              <p>50,000원</p>
+            </div>
+              
               <input type="text" placeholder="직접입력" class="self">
             </div>
           </div>
           <div class="donateBox_row">
             <div class="rowLeft">후원기간</div>
             <div class="rowRight">
-              <input type="date" class="self">&nbsp;-&nbsp;<input type="date" class="self">
+              <input type="date" class="dateSelf">&nbsp;-&nbsp;<input type="date" class="dateSelf">
             </div>
           </div>
         </div>
@@ -149,6 +163,7 @@
                 <input type="email" class="self">
                 <select class="emails">
                   <option value="email" selected>이메일 주소</option>
+                  <option value="email1">직접입력</option>
                   <option value="email">naver.com</option>
                   <option value="email">hotmail.com</option>
                   <option value="email">hanmail.net</option>
@@ -156,7 +171,6 @@
                   <option value="email">outlook.com</option>
                   <option value="email">korea.com</option>
                   <option value="email">nate.com</option>
-                  <option value="email1">직접입력</option>
                 </select>
               </div>
             </div>
@@ -170,8 +184,16 @@
               <div class="donateBox_row">
                 <div class="rowLeft">결제 수단</div>
                 <div class="rowRight">
-                  <button class="auto">자동이체</button>
-                  <button class="temporary">신용카드</button>
+                  <div class="auto">
+                    <button class="autoButton"></button>
+                    <p>자동이체</p>
+                  </div>
+
+                  <div class="creditCard">
+                    <button class="creditCard_Button"></button>
+                    <p>신용카드</p>
+                  </div>
+
                 </div>
               </div>
               <div class="donateBox_row">
@@ -180,6 +202,7 @@
                   <input type="text" class="selfBank">
                   <select class="banks">
                     <option value="bank" selected>은행명</option>
+                    <option value="bank1" class="bank">직접입력</option>
                     <option value="bank">국민은행</option>
                     <option value="bank">우리은행</option>
                     <option value="bank">신한은행</option>
@@ -187,7 +210,6 @@
                     <option value="bank">기업은행</option>
                     <option value="bank">수협은행</option>
                     <option value="bank">신협은행</option>
-                    <option value="bank1" class="bank">직접입력</option>
                   </select>
                 </div>
                 </div>
@@ -214,7 +236,7 @@
               <div class="donateBox_row">
                 <div class="rowLeft">출금일</div>
                 <div class="rowRight">
-                  <select class="self">
+                  <select class="daily">
                     <option value="money">매 달 1일</option>
                     <option value="money">매 달 2일</option>
                     <option value="money">매 달 3일</option>
@@ -258,11 +280,47 @@
               </div>
             </div>
 
+            <div id="donate_bottom2">
+              <div class="bottomBox">
+                <div class="donateBox_row">
+                  <h3>결제 정보</h3>
+                </div>
+                <div class="donateBox_row">
+                  <div class="rowLeft">결제 수단</div>
+                  <div class="rowRight2">
+                    <div class="oneTime">
+                      <button class="oneTime_Button"></button>
+                      <p>실시간 이체</p>
+                    </div>
+  
+                    <div class="oneTime">
+                      <button class="oneTime_Button"></button>
+                      <p>신용카드</p>
+                    </div>
+
+                    <div class="oneTime">
+                      <button class="oneTime_Button"></button>
+                      <p>휴대폰 결제</p>
+                    </div>
+
+                    <div class="oneTime">
+                      <button class="oneTime_Button"></button>
+                      <p>카카오페이</p>
+                    </div>
+              </div>
+              <div class="caution2">
+                <p>*일시납입은 신청 즉시 결제가 이루어집니다.</p>
+                <p>*해외에서 발급한 신용카드는 일시 결제 진행을 할 수 없습니다.</p>
+                <p>*금융정보 도용 시 처벌 받을 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
           <div id="donate_checkBox">
               <input type="checkbox" value="selectall" onclick="selectAll(this)">&nbsp;<b>전체 동의하기</b> <br><br>
-              <input type="checkbox" value="checkbox"><span class="agree">&nbsp;후원회원약관 동의 <b>[보기]</b></span> <br>
-              <input type="checkbox" value="checkbox"><span class="agree">&nbsp;개인정보처리방침 동의 <b>[보기]</b></span> 
+              <p><input type="checkbox" value="checkbox"><span class="agree">&nbsp;후원회원약관 동의 <input type="button" onclick="load1()" value="[보기]" class="popup"></p>
+              <p><input type="checkbox" value="checkbox"><span class="agree">&nbsp;개인정보처리방침 동의 <input type="button" onclick="load2()" value="[보기]" class="popup"></p>
           </div>
           
         <div id="donate_button">
