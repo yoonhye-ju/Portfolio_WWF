@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media(min-width: 1217px){
+@media(max-width: 600px){
 
 .container{width: 1200px; height: 100%; margin: 0 auto;}
 
@@ -11,14 +11,14 @@
 .selfBox2{width: 40%; height: 30px; margin-top: 15px; padding: 2px; background-color: rgb(250, 250, 250); border: 1px solid #666;}
 
 
-.donateLeft{width: 12%; height: 188px; float:left; margin-top:300px; margin-left: 1%; background-color: white; display: flex; flex-direction: column; padding: 1%; border-top: solid 8px black; border-bottom: solid 8px black; opacity: 0.8;}
+.donateLeft{width: 13%; height: 188px; float:left; margin-top:300px; background-color: white; display: flex; flex-direction: column; padding: 1%; border-top: solid 8px black; border-bottom: solid 8px black; opacity: 0.8;}
 .box{width: 100%; height: 30px;}
 .box:not(:last-child){border-bottom: 1px solid black;}
 .box p{line-height: 30px; font-size: 14px; font-family: 'S-CoreDream-4Regular';}
 .box p:hover{font-weight: bold; cursor: pointer;}
 
 
-.donateRight{width: 83%; height: 2150px; float: left; background-color: white; margin-top: 300px; margin-left: 2%; padding: 8%; border-top: solid 8px black;}
+.donateRight{width: 85%; height: 2150px; float: right; background-color: white; margin: 300px auto 0; padding: 8%; border-top: solid 8px black;}
 
 .donateBox{width: 100%; height: 405px; border-bottom: 1px solid black;}
 .donateBox_row{width: 100%; height: 60px; line-height: 60px; margin-bottom: 10px;}

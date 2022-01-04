@@ -9,13 +9,21 @@
 
   <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/sub(max1199px).css">
+  <link rel="stylesheet" href="css/sub(max990px).css">
+  <link rel="stylesheet" href="css/sub(max600px).css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/common_sub.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="JS/main.js"></script>
   <script src="JS/slideToggle.js"></script>
-  <script src="JS/sub_back.js"></script>
+  <script src="JS/sub.js"></script>
+  <script src="JS/button.js"></script>
+  <script src="JS/alert.js"></script>
+  <script src="JS/popup.js"></script>
+  <script src="JS/checkbox.js"></script>
+  <script src="JS/placeholder.js"></script>
 </head>
 
 
@@ -61,13 +69,13 @@
                 <li><a href="sub.html">판다 메일</a></li>
               </ul>
             </li>
-            <li><a href="#">SUPPORT</a>
+            <li><a href="sub.html">SUPPORT</a>
               <ul class="sub">
-                <li><a href="#">후원 안내</a></li>
-                <li><a href="#">정기 후원</a></li>
-                <li><a href="#">일시 후원</a></li>
-                <li><a href="#">기업 후원</a></li>
-                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="sub.html">후원 안내</a></li>
+                <li><a href="sub.html">정기 후원</a></li>
+                <li><a href="sub.html">일시 후원</a></li>
+                <li><a href="sub.html">기업 후원</a></li>
+                <li><a href="sub.html">자주 묻는 질문</a></li>
               </ul>
             </li>
           </ul>
@@ -107,9 +115,9 @@
           <div class="donateBox_row">
             <div class="rowLeft">후원주기</div>
             <div class="rowRight">
-              <div class="long" onclick="button()">
+              <div class="long">
                 <button class="longButton"></button>
-                <p>정기 후원</p>
+                <p class="active">정기 후원</p>
               </div>
 
               <div class="temporary">
@@ -124,9 +132,9 @@
             <div class="rowRight">
               <div class="donateMoney">
                 <button class="donateMoney_Button"></button>
-                <p>30,000원</p>
+                <p class="active">30,000원</p>
               </div>
-            <div class="donateMoney">
+            <div class="donateMoney2">
               <button class="donateMoney_Button"></button>
               <p>50,000원</p>
             </div>
@@ -177,108 +185,148 @@
           </div>
 
           <div id="donate_bottom">
-            <div class="bottomBox">
-              <div class="donateBox_row">
-                <h3>결제 정보</h3>
-              </div>
+            <div class="donateBox_row">
+              <h3>결제 정보</h3>
+            </div>
               <div class="donateBox_row">
                 <div class="rowLeft">결제 수단</div>
                 <div class="rowRight">
                   <div class="auto">
                     <button class="autoButton"></button>
-                    <p>자동이체</p>
+                    <p class="active">자동이체</p>
                   </div>
-
+          
                   <div class="creditCard">
                     <button class="creditCard_Button"></button>
                     <p>신용카드</p>
                   </div>
+                </div>
+              </div>
 
+              <div class="bottomBox">
+                <div class="donateBox_row">
+                  <div class="rowLeft">은행명</div>
+                  <div class="rowRight">
+                    <input type="text" class="selfBank">
+                    <select class="banks">
+                      <option value="bank" selected>은행명</option>
+                      <option value="bank1" class="bank">직접입력</option>
+                      <option value="bank">국민은행</option>
+                      <option value="bank">우리은행</option>
+                      <option value="bank">신한은행</option>
+                      <option value="bank">하나은행</option>
+                      <option value="bank">기업은행</option>
+                      <option value="bank">수협은행</option>
+                      <option value="bank">신협은행</option>
+                    </select>
+                  </div>
+                </div>
+              
+                <div class="donateBox_row">
+                  <div class="rowLeft">계좌번호</div>
+                  <div class="rowRight">
+                    <input type="text" class="account" placeholder="'-' 를 빼고 입력해주세요">
+                    <input type="button" value="계좌번호 확인" class="check">
+                  </div>
+                </div>
+                <div class="donateBox_row">
+                  <div class="rowLeft">예금주명</div>
+                  <div class="rowRight">
+                    <input type="text" class="self" placeholder="ex)홍길동">
+                  </div>
+                </div>
+                <div class="donateBox_row">
+                  <div class="rowLeft">생년월일</div>
+                  <div class="rowRight">
+                    <input type="text" class="self" placeholder="주민번호 앞 6자리">
+                  </div>
                 </div>
               </div>
-              <div class="donateBox_row">
-                <div class="rowLeft">은행명</div>
-                <div class="rowRight">
-                  <input type="text" class="selfBank">
-                  <select class="banks">
-                    <option value="bank" selected>은행명</option>
-                    <option value="bank1" class="bank">직접입력</option>
-                    <option value="bank">국민은행</option>
-                    <option value="bank">우리은행</option>
-                    <option value="bank">신한은행</option>
-                    <option value="bank">하나은행</option>
-                    <option value="bank">기업은행</option>
-                    <option value="bank">수협은행</option>
-                    <option value="bank">신협은행</option>
-                  </select>
+
+              <div class="creditCard_Box">
+                <div class="donateBox_row">
+                  <div class="rowLeft">카드번호</div>
+                  <div class="rowRight">
+                    <input type="text" class="selfBox" placeholder="XXXX XXXX XXXX XXXX">
+                  </div>
                 </div>
+
+                <div class="donateBox_row">
+                  <div class="rowLeft">유효기간</div>
+                  <div class="rowRight">
+                    <input type="text" class="self" placeholder="MM"> &nbsp; &nbsp; 
+                    <input type="text" class="self" placeholder="YY">
+                  </div>
                 </div>
-              </div>
-              <div class="donateBox_row">
-                <div class="rowLeft">계좌번호</div>
-                <div class="rowRight">
-                  <input type="text" class="account" placeholder="'-' 를 빼고 입력해주세요">
-                  <input type="button" value="계좌번호 확인" class="check">
+
+                <div class="donateBox_row">
+                  <div class="rowLeft">카드주명</div>
+                  <div class="rowRight">
+                    <input type="text" class="self" placeholder="ex) 홍길동">
+                  </div>
                 </div>
-              </div>
-              <div class="donateBox_row">
-                <div class="rowLeft">예금주명</div>
-                <div class="rowRight">
-                  <input type="text" class="self" placeholder="ex)홍길동">
+
+                <div class="donateBox_row">
+                  <div class="rowLeft">생년월일</div>
+                  <div class="rowRight">
+                    <input type="text" class="selfBox2" placeholder="주민번호 앞 6자리 (또는 사업자번호">
+                  </div>
                 </div>
-              </div>
-              <div class="donateBox_row">
-                <div class="rowLeft">생년월일</div>
-                <div class="rowRight">
-                  <input type="text" class="self" placeholder="주민번호 앞 6자리">
-                </div>
-              </div>
-              <div class="donateBox_row">
-                <div class="rowLeft">출금일</div>
-                <div class="rowRight">
-                  <select class="daily">
-                    <option value="money">매 달 1일</option>
-                    <option value="money">매 달 2일</option>
-                    <option value="money">매 달 3일</option>
-                    <option value="money">매 달 4일</option>
-                    <option value="money">매 달 5일</option>
-                    <option value="money">매 달 6일</option>
-                    <option value="money">매 달 7일</option>
-                    <option value="money">매 달 8일</option>
-                    <option value="money">매 달 9일</option>
-                    <option value="money">매 달 10일</option>
-                    <option value="money">매 달 11일</option>
-                    <option value="money">매 달 12일</option>
-                    <option value="money">매 달 13일</option>
-                    <option value="money">매 달 14일</option>
-                    <option value="money">매 달 15일</option>
-                    <option value="money">매 달 16일</option>
-                    <option value="money">매 달 17일</option>
-                    <option value="money">매 달 18일</option>
-                    <option value="money">매 달 19일</option>
-                    <option value="money">매 달 20일</option>
-                    <option value="money">매 달 21일</option>
-                    <option value="money">매 달 22일</option>
-                    <option value="money">매 달 23일</option>
-                    <option value="money">매 달 24일</option>
-                    <option value="money">매 달 25일</option>
-                    <option value="money">매 달 26일</option>
-                    <option value="money">매 달 27일</option>
-                    <option value="money">매 달 28일</option>
-                    <option value="money">매 달 29일</option>
-                    <option value="money">매 달 30일</option>
-                    <option value="money">매 달 31일</option>
-                  </select>
+
+                <div class="donateBox_row">
+                  <div class="rowLeft">비밀번호</div>
+                  <div class="rowRight">
+                    <input type="password" class="self">
+                  </div>
                 </div>
               </div>
-              <div class="caution">
-                <p>*당일 출금 실패 시 익일 재청구가 시도됩니다.</p>
-                <p>*첫 정기 후원금은 등록 후 가까운 일자에 결제됩니다.(2~3일 소요)</p>
-                <p>*신용카드 후원 시 나이스빌링, 나이스_정기과금,후원금_나이스 또는 Nice로 표시되어 청구됩니다.</p>
-                <p>*해외에서 발급한 계좌번호 및 신용카드는 정기 결제 진행을 할 수 없습니다.</p>
-                <p>*금융정보 도용 시 처벌 받을 수 있습니다.</p>
+
+            <div class="donateBox_row">
+              <div class="rowLeft">출금일</div>
+              <div class="rowRight">
+                <select class="daily">
+                  <option value="money">매 달 1일</option>
+                  <option value="money">매 달 2일</option>
+                  <option value="money">매 달 3일</option>
+                  <option value="money">매 달 4일</option>
+                  <option value="money">매 달 5일</option>
+                  <option value="money">매 달 6일</option>
+                  <option value="money">매 달 7일</option>
+                  <option value="money">매 달 8일</option>
+                  <option value="money">매 달 9일</option>
+                  <option value="money">매 달 10일</option>
+                  <option value="money">매 달 11일</option>
+                  <option value="money">매 달 12일</option>
+                  <option value="money">매 달 13일</option>
+                  <option value="money">매 달 14일</option>
+                  <option value="money">매 달 15일</option>
+                  <option value="money">매 달 16일</option>
+                  <option value="money">매 달 17일</option>
+                  <option value="money">매 달 18일</option>
+                  <option value="money">매 달 19일</option>
+                  <option value="money">매 달 20일</option>
+                  <option value="money">매 달 21일</option>
+                  <option value="money">매 달 22일</option>
+                  <option value="money">매 달 23일</option>
+                  <option value="money">매 달 24일</option>
+                  <option value="money">매 달 25일</option>
+                  <option value="money">매 달 26일</option>
+                  <option value="money">매 달 27일</option>
+                  <option value="money">매 달 28일</option>
+                  <option value="money">매 달 29일</option>
+                  <option value="money">매 달 30일</option>
+                  <option value="money">매 달 31일</option>
+                </select>
               </div>
             </div>
+            <div class="caution">
+              <p>*당일 출금 실패 시 익일 재청구가 시도됩니다.</p>
+              <p>*첫 정기 후원금은 등록 후 가까운 일자에 결제됩니다.(2~3일 소요)</p>
+              <p>*신용카드 후원 시 나이스빌링, 나이스_정기과금,후원금, 나이스 또는 Nice로 표시되어 청구됩니다.</p>
+              <p>*해외에서 발급한 계좌번호 및 신용카드는 정기 결제 진행을 할 수 없습니다.</p>
+              <p>*금융정보 도용 시 처벌 받을 수 있습니다.</p>
+            </div>
+          </div>
 
             <div id="donate_bottom2">
               <div class="bottomBox">
@@ -288,22 +336,22 @@
                 <div class="donateBox_row">
                   <div class="rowLeft">결제 수단</div>
                   <div class="rowRight2">
-                    <div class="oneTime">
+                    <div class="oneTime1">
                       <button class="oneTime_Button"></button>
                       <p>실시간 이체</p>
                     </div>
   
-                    <div class="oneTime">
+                    <div class="oneTime2">
                       <button class="oneTime_Button"></button>
                       <p>신용카드</p>
                     </div>
 
-                    <div class="oneTime">
+                    <div class="oneTime3">
                       <button class="oneTime_Button"></button>
                       <p>휴대폰 결제</p>
                     </div>
 
-                    <div class="oneTime">
+                    <div class="oneTime4">
                       <button class="oneTime_Button"></button>
                       <p>카카오페이</p>
                     </div>
@@ -319,8 +367,14 @@
 
           <div id="donate_checkBox">
               <input type="checkbox" value="selectall" onclick="selectAll(this)">&nbsp;<b>전체 동의하기</b> <br><br>
-              <p><input type="checkbox" value="checkbox"><span class="agree">&nbsp;후원회원약관 동의 <input type="button" onclick="load1()" value="[보기]" class="popup"></p>
-              <p><input type="checkbox" value="checkbox"><span class="agree">&nbsp;개인정보처리방침 동의 <input type="button" onclick="load2()" value="[보기]" class="popup"></p>
+              <p>
+                <input type="checkbox" value="checkbox"><span class="agree">&nbsp;후원회원약관 동의</span>
+                <input type="button" onclick="load1()" value="[보기]" class="popup">
+              </p>
+              <p>
+                <input type="checkbox" value="checkbox"><span class="agree">&nbsp;개인정보처리방침 동의</span>
+                <input type="button" onclick="load2()" value="[보기]" class="popup">
+              </p>
           </div>
           
         <div id="donate_button">
@@ -330,8 +384,6 @@
       </div>
     </div>
   </div>
-</div>
-
 
   <footer>
     <div class="container">

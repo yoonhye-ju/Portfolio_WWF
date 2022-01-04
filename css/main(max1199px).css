@@ -153,7 +153,7 @@
 .pressText{width:100%; text-align: center; margin-bottom: 80px;}
 .pressText>p{font-family: 'S-CoreDream-3Light';}
 .pressText h1{font-family: 'S-CoreDream-5Medium';}
-.pressBox{display: flex; flex-wrap: row nowrap; justify-content: space-around;}
+.pressBox{display: flex; flex-wrap: nowrap; justify-content: space-around;}
 .press_picBox{width: 23%; height: 500px; background-color: white; padding: 3%;}
 .press_picBox:hover{transform: scale(1.01); transition: all 0.1s ease-in;}
 .press_picBox>img{width: 100%; margin-bottom: 20px; cursor: pointer;}
