@@ -7,7 +7,10 @@ $(function(){
 });
 
 $(window).resize(function(){
-  if(window.innerWidth>=500){
-      $(".menu").show();
+  if(window.innerWidth>=850){
+      $('.menu').show();
+  }
+  if(window.innerWidth<=849){
+    $('.menu').hide();
   }
 });
