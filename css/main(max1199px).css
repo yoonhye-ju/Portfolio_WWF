@@ -161,4 +161,5 @@
 .press_picBox h6{margin-bottom: 30px;}
 .press_picBox span{width: 100px; height: 50px; background-color: #87c7ff; color: white; border-radius: 3px; font-size: 11px; padding: 8px; cursor: pointer; font-family: 'S-CoreDream-4Regular';}
 
+iframe{border-width:0;}
 }

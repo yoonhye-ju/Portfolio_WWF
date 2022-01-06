@@ -84,7 +84,7 @@ transition:all .5s ease; z-index:1;}
 .caution p{font-size: 13px; line-height: 25px;}
 
 .dateSelf{width: 40%; height: 30px; margin-top: 15px; padding: 2px;}
-.daily{width: 23%; height: 30px; margin-top: 15px; padding: 2px;}
+.daily{width: 35%; height: 30px; margin-top: 15px; padding: 2px;}
 
 
 .creditCard_Box{display: none;}

@@ -14,13 +14,13 @@ $(function () {
     $("#donate_bottom").hide();
     $("#donate_bottom2").show();
     $('#back').css({height: '2200px'});
-    $('.donateRight').css({height: '1770px'});
+    $('.donateRight').css({height: 'auto'});
   });
   $('.long').click(function () {
     $("#donate_bottom").show();
     $("#donate_bottom2").hide();
     $('#back').css({height: '2600px'});
-    $('.donateRight').css({height: '2150px'})
+    $('.donateRight').css({height: 'auto'})
   });
 });
 
