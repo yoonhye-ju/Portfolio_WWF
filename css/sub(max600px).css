@@ -72,11 +72,11 @@ transition:all .5s ease; z-index:1;}
 #donate_middle{width: 100%; height: 350px; border-bottom: 1px solid black; margin-top: 50px;}
 .middleBox_row{width: 100%; height: 80px; margin-bottom: 10px; padding-top: 15px;}
 .middleBox_row p{font-size: 14px; padding-top: 5px;}
-.emails{width: 45%; height: 30px; margin-top: 15px; margin-left: 1.5%; padding: 2px;}
+.emails{width: 45%; height: 30px; margin-top: 15px; margin-left: 1%; padding: 2px;}
 
 #donate_bottom{width: 100%; height: 800px; border-bottom: 1px solid black; margin-top: 50px;}
 .banks{width: 45%; height: 30px; margin-top: 15px; padding: 2px;}
-.selfBank{width: 30%; height: 30px; margin-top: 15px; padding: 2px; display: none; margin-right: 1%; background-color: rgb(250, 250, 250); border: 1px solid #666;}
+.selfBank{width: 45%; height: 30px; margin-top: 15px; padding: 2px; display: none; margin-right: 1%; background-color: rgb(250, 250, 250); border: 1px solid #666;}
 .account{width: 55%; height: 30px; margin-top: 15px; margin-right: 3%; padding: 2px; background-color: rgb(250, 250, 250); border: 1px solid #666;}
 .check{width: 35%; height: 30px; margin-top: 15px; padding: 2px; cursor: pointer; border:none;}
 

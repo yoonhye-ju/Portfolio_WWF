@@ -76,7 +76,7 @@ transition:all .5s ease; z-index:1;}
 
 #donate_bottom{width: 100%; height: 800px; border-bottom: 1px solid black; margin-top: 50px;}
 .banks{width: 23%; height: 30px; margin-top: 15px; padding: 2px;}
-.selfBank{width: 23%; height: 30px; margin-top: 15px; padding: 2px; display: none; margin-right: 1%; background-color: rgb(250, 250, 250); border: 1px solid #666;}
+.selfBank{width: 35%; height: 30px; margin-top: 15px; padding: 2px; display: none; margin-right: 1%; background-color: rgb(250, 250, 250); border: 1px solid #666;}
 .account{width: 45%; height: 30px; margin-top: 15px; margin-right: 3%; padding: 2px; background-color: rgb(250, 250, 250); border: 1px solid #666;}
 .check{width: 30%; height: 30px; margin-top: 15px; padding: 2px; cursor: pointer; border:none;}
 
