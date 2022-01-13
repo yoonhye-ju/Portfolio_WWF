@@ -1,4 +1,3 @@
-
 if (window.matchMedia("(min-width: 1200px)").matches) {
 
   $(window).scroll(function () {

@@ -7,9 +7,6 @@ $(document).ready(function () {
     $(this).addClass("active").css({ color: "white" });
     $(".auto p").removeClass("active").css({ color: "lightskyblue" }).css({ color: "lightskyblue" });
   });
-});
-
-$(document).ready(function () {
   $(".long p").click(function () {
     $(this).addClass("active").css({ color: "white" });
     $(".temporary p").removeClass("active").css({ color: "lightskyblue" });
@@ -18,9 +15,6 @@ $(document).ready(function () {
     $(this).addClass("active").css({ color: "white" });
     $(".long p").removeClass("active").css({ color: "lightskyblue" }).css({ color: "lightskyblue" });
   });
-});
-
-$(document).ready(function () {
   $(".donateMoney p").click(function () {
     $(this).addClass("active").css({ color: "white" });
     $(".donateMoney2 p").removeClass("active").css({ color: "lightskyblue" });
@@ -29,9 +23,6 @@ $(document).ready(function () {
     $(this).addClass("active").css({ color: "white" });
     $(".donateMoney p").removeClass("active").css({ color: "lightskyblue" }).css({ color: "lightskyblue" });
   });
-});
-
-$(document).ready(function () {
   $(".oneTime1 p").click(function () {
     $(this).addClass("active").css({ color: "white" });
     $(".oneTime2 p").removeClass("active").css({ color: "lightskyblue" });

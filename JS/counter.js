@@ -1,4 +1,3 @@
-
 $(function(){
   let counter=782000;
   counterSpeed();

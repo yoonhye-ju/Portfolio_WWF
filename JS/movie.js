@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $('.movie').mouseleave(function(){
     $(this).children('.icon_video').hide();
