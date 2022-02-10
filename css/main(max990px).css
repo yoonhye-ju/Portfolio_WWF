@@ -41,6 +41,7 @@
 #middle{width: 100%; height: 1000px;}
 #middle>.container{display: flex; flex-direction: column;}
 .middle_right{width: 100%; height: 50%; order:1; display: block; margin-bottom: 50px;}
+.middle_right iframe{width: 100%; height: 100%;}
 .middle_left{width: 100%; height: 50%; padding: 3%; order:2; display: block;}
 .middle_textbox{text-align: center;}
 .middle_textbox>h1{font-size: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 2s; opacity: 0; font-family: 'S-CoreDream-5Medium'; color: #87c7ff;}

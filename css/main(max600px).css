@@ -41,6 +41,7 @@
 #middle{width: 100%; height: 1000px;}
 #middle>.container{display: flex; flex-direction: column;}
 .middle_right{width: 100%; height: 50%; order:1; display: block; margin-bottom: 50px;}
+.middle_right iframe{width: 100%; height: 100%;}
 .middle_left{width: 100%; height: 50%; padding: 3%; order:2; display: block;}
 .middle_textbox{text-align: center;}
 .middle_textbox>h1{font-size: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 2s; opacity: 0; font-family: 'S-CoreDream-5Medium'; color: #87c7ff;}
@@ -139,9 +140,9 @@
 
 
 .elephant{transform: translateY(100px); transition: all 1s; opacity: 0; margin-bottom: 160px;}
-.panda{ transform: translateY(100px); transition: all 1.2s; opacity: 0; margin-bottom: 160px;}
-.tiger{ transform: translateY(100px); transition: all 1.4s; opacity: 0;}
-.polarbear{transform: translateY(100px); transition: all 1.6s; opacity: 0;}
+.panda{transform: translateY(100px); transition: all 1.2s; opacity: 0; margin-bottom: 160px;}
+.tiger{transform: translateY(120px); transition: all 1.4s; opacity: 0;}
+.polarbear{transform: translateY(120px); transition: all 1.6s; opacity: 0;}
 
 .protectText{width: 100%; height: 100px; padding: 5%; text-align: center;}
 .protectText>p{font-family: 'S-CoreDream-3Light';}
