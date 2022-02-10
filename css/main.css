@@ -42,6 +42,7 @@
 
 #middle{width: 100%; height: 500px;}
 .middle_right{width: 50%; height: 100%; float: right;}
+.middle_right iframe{width: 100%; height: 100%;}
 .middle_left{width: 50%; height: 100%; float: left; padding: 3%;}
 .middle_textbox{text-align: right;}
 .middle_textbox>h1{font-size: 30px; margin-bottom: 30px; transform: translateY(100px); transition: all 2s; opacity: 0; font-family: 'S-CoreDream-5Medium'; color: #87c7ff;}
